@@ -133,6 +133,23 @@
     <!-- Button linking to another page -->
   <a href="contact.html" class="nav-button">Contact Us</a>
 
+  <!-- Colour Toggle Button -->
+  <button class="color-btn" onclick="toggleColor()">Change Background Colour</button>
+
+  <script>
+    function toggleColor() {
+      // Get current background colour
+      const currentColor = document.body.style.backgroundColor;
+
+      // Toggle between light purple and white
+      if (currentColor === 'white' || currentColor === 'rgb(255, 255, 255)') {
+        document.body.style.backgroundColor = '#e6ccff'; // light purple
+      } else {
+        document.body.style.backgroundColor = 'white';
+      }
+    }
+  </script>
+
     <footer>
         <p>&copy; 2025 Sparks and Wires Electrical Services</p>
         </footer>
