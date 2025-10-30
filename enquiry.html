@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Sparks and Wires</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Request a Service Enquiry</h1>
+    <p class="lead">Tell us which service you need and we'll get back to you with a quote.</p>
+
+    <!-- Form: update action or endpoint in script.js (FORM_ENDPOINT) -->
+    <form id="enquiryForm" class="form" novalidate>
+      <!-- Honeypot for bots (hidden from users) -->
+      <div class="form-field honeypot" aria-hidden="true" style="display:none;">
+        <label for="hp">Leave this field empty</label>
+        <input id="hp" name="hp" type="text" autocomplete="off" />
+      </div>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name">Full name <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="err-name" />
+          <p id="err-name" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email" />
+          <p id="err-email" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+27 82 123 4567" aria-describedby="err-phone" />
+          <p id="err-phone" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="service">Service required <span aria-hidden="true">*</span></label>
+          <select id="service" name="service" required aria-describedby="err-service">
+            <option value="">— Choose a service —</option>
+            <option value="Residential Electrical Wiring and Repairs">Residential Electrical Wiring and Repairs</option>
+            <option value="Commercial Electrical Installations">Commercial Electrical Installations</option>
+            <option value="Emergency Call-Out Services">Emergency Call-Out Services</option>
+            <option value="Lighting Design and Installation">Lighting Design and Installation</option>
+            <option value="Electrical Safety Inspections">Electrical Safety Inspections</option>
+          </select>
+          <p id="err-service" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field full">
+          <label for="message">Details / Project description <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required aria-describedby="err-message" placeholder="Tell us about your project, location and preferred times..."></textarea>
+          <p id="err-message" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field full">
+          <label>
+            <input id="consent" name="consent" type="checkbox" required aria-describedby="err-consent" />
+            I consent to Sparks &amp; Wires contacting me regarding this enquiry.
+          </label>
+          <p id="err-consent" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button id="submitBtn" type="submit">Send Enquiry</button>
+        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+      </div>
+    </form>
+
+    <aside class="contact-alt">
+      <h3>Prefer email or phone?</h3>
+      <p>Email: <a href="mailto:info@sparksandwires.co.za">info@sparksandwires.co.za</a></p>
+      <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+    </aside>
+  </main>
+
+  <!-- script -->
+  <script src="enquiry-script.js" defer></script>
+</body>
+</html>
+
+<!-- Button linking to another page -->
+  <a href="contact.html" class="nav-button">Contact Us</a>
+
+    <footer>
+        <p>&copy; 2025 Sparks and Wires Electrical Services</p>
+        </footer>
+</body>
+</html>

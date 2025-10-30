@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Gallery - Sparks & Wires Electrical Services | Expert Electricians for Homes & Businesses</title>
+    <meta name="description" content="Sparks & Wires Electrical Services provides reliable residential, commercial, and emergency electrical work including installations, repairs, and maintenance across South Africa.">
+    <meta name="keywords" content="Sparks and Wires Electrical Services, electrician, electrical repairs, commercial electrician, residential electrician, emergency electrician, lighting installation, electrical maintenance, South Africa electricians">
+    <meta name="author" content="Sparks & Wires Electrical Service">
+  <meta name="description" content="Portfolio gallery of Sparks & Wires Electrical Services — residential wiring, panel upgrades, lighting installations and safety inspections.">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <header style="text-align:center;padding:1.25rem 1rem;background:#003049;color:#fff;">
+    <h1 style="margin:0;font-size:1.4rem;">Sparks & Wires — Project Gallery</h1>
+  </header>
+
+  <main class="wrap">
+    <p class="intro">Click any image to view full-size and details.</p>
+
+    <section class="gallery-grid" aria-label="Project gallery">
+      <!-- Thumbnails (fast small images). data-large points to the high-res image. -->
+      <button class="thumb" data-index="0" data-large="images/residential-wiring.jpg" aria-label="Residential wiring project — open lightbox">
+        <img src="img/istockphoto-2172352979-612x612.jpg" alt="Residential wiring project" loading="lazy">
+        <span class="caption">Residential wiring — R1,200</span>
+      </button>
+
+      <button class="thumb" data-index="1" data-large="images/commercial-installations.jpg" aria-label="Commercial installation project — open lightbox">
+        <img src="img/istockphoto-2181524735-612x612.jpg" alt="Commercial electrical installation" loading="lazy">
+        <span class="caption">Commercial installation — R800</span>
+      </button>
+
+      <button class="thumb" data-index="2" data-large="images/emergency-service.jpg" aria-label="Emergency call-out service example — open lightbox">
+        <img src="img/istockphoto-951120494-612x612.jpg" alt="Emergency electrician on site" loading="lazy">
+        <span class="caption">Emergency call-out — R150</span>
+      </button>
+
+      <button class="thumb" data-index="3" data-large="images/lighting-design.jpg" aria-label="Lighting design and installation project — open lightbox">
+        <img src="img/istockphoto-2188989392-612x612.jpg" alt="Lighting design installation" loading="lazy">
+        <span class="caption">Lighting design — R200</span>
+      </button>
+
+      <button class="thumb" data-index="4" data-large="images/safety-inspection.jpg" aria-label="Electrical safety inspection example — open lightbox">
+        <img src="img/istockphoto-183770082-612x612.jpg" alt="Electrical safety inspection" loading="lazy">
+        <span class="caption">Safety inspection — R500</span>
+      </button>
+    </section>
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image viewer">
+    <button class="lb-close" aria-label="Close (Esc)">✕</button>
+    <button class="lb-prev" aria-label="Previous (Left arrow)">‹</button>
+    <div class="lb-content" tabindex="0">
+      <img id="lb-image" alt="" src="" />
+      <div id="lb-caption" class="lb-caption" aria-live="polite"></div>
+      <div class="lb-footer">
+        <span id="lb-filename" class="lb-filename"></span>
+      </div>
+    </div>
+    <button class="lb-next" aria-label="Next (Right arrow)">›</button>
+  </div>
+
+  <script src="gallery.js" defer></script>
+  <!-- Button linking to another page -->
+  <a href="contact.html" class="nav-button">Contact Us</a>
+  
+  <footer>
+        <p>&copy; 2025 Sparks and Wires Electrical Services</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Contact - Sparks & Wires Electrical Services | Expert Electricians for Homes & Businesses</title>
+    <meta name="description" content="Sparks & Wires Electrical Services provides reliable residential, commercial, and emergency electrical work including installations, repairs, and maintenance across South Africa.">
+    <meta name="keywords" content="Sparks and Wires Electrical Services, electrician, electrical repairs, commercial electrician, residential electrician, emergency electrician, lighting installation, electrical maintenance, South Africa electricians">
+    <meta name="author" content="Sparks & Wires Electrical Service">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enqiury.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +27 123 456 789</p>
+        <p><strong>Email:</strong> info@sparksandwires.co.za</p>
+        <p><strong>Address:</strong> 123 Main Street, Johannesburg, South Africa</p>
+
+        <img src="img/istockphoto-1065386198-612x612.jpg" width="1200" height="300">
+
+        <!--
+        Electrical Works 
+        Available at: https://img/istockphoto-1065386198-612x612.jpg
+        -->
+
+        <h3>Find Us</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.724644735869!2d28.020741474627023!3d-26.205634164030798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950eaa34b2b3df%3A0x43824ad76b85735!2s123%20Main%20Rd%2C%20Fordsburg%2C%20Johannesburg%2C%202092!5e0!3m2!1sen!2sza!4v1756300012874!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+
+        <h1>Contact Us</h1>
+      <p class="lead">Questions, quotes or bookings — send us a message and we'll get back to you.</p>
+    </header>
+
+    <section class="contact-grid">
+      <form id="contactForm" class="form" novalidate>
+        <!-- Hidden honeypot (bots will fill, humans don't) -->
+        <div class="honeypot" aria-hidden="true" style="display:none;">
+          <label for="cf_hp">Leave this empty</label>
+          <input id="cf_hp" name="hp" type="text" autocomplete="off">
+        </div>
+
+        <div class="form-row">
+          <label for="cf_name">Full name <span aria-hidden="true">*</span></label>
+          <input id="cf_name" name="name" type="text" autocomplete="name" required aria-describedby="err-cf_name">
+          <p id="err-cf_name" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="cf_email">Email <span aria-hidden="true">*</span></label>
+          <input id="cf_email" name="email" type="email" autocomplete="email" required aria-describedby="err-cf_email">
+          <p id="err-cf_email" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="cf_phone">Phone</label>
+          <input id="cf_phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+27 82 123 4567" aria-describedby="err-cf_phone">
+          <p id="err-cf_phone" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-row full">
+          <label for="cf_message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="cf_message" name="message" rows="6" required aria-describedby="err-cf_message" placeholder="How can we help?"></textarea>
+          <p id="err-cf_message" class="error-msg" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="form-row full">
+          <label>
+            <input id="cf_subscribe" name="subscribe" type="checkbox">
+            Send me occasional service updates and offers (optional)
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="cf_submit" type="submit">Send Message</button>
+          <div id="cf_status" class="form-status" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+
+      <aside class="contact-info">
+        <h2>Other ways to reach us</h2>
+        <p><strong>Email:</strong> <a href="mailto:info@sparksandwires.co.za">info@sparksandwires.co.za</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+27123456789">+27 12 345 6789</a></p>
+        <p><strong>Address:</strong> 123 Main Street, Johannesburg</p>
+        <p class="small">If the form fails, use <a id="mailtoFallback" href="mailto:info@sparksandwires.co.za">email</a>.</p>
+      </aside>
+    </section>
+  </main>
+
+  <!-- script -->
+  <script src="contact-script.js" defer></script>
+
+    <footer>
+        <p>&copy; 2025 Sparks and Wires Electrical Services</p>
+        </footer>
+</body>
+</html>
