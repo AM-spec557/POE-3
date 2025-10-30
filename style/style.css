@@ -383,3 +383,27 @@ body {
     .color-btn:hover {
       background-color: #9b30ff;
     }
+
+    /* Button styling */
+    .next-btn {
+      display: inline-block;
+      background-color: #6a0dad;
+      color: white;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-btn:hover {
+      background-color: #9b30ff; /* Lighter purple on hover */
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
